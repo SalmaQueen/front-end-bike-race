@@ -1,0 +1,10 @@
+
+.bg-display{
+    background: #061d1a;  /* fallback for old browsers */
+}
+body{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    font-size: 1.0rem;
+}

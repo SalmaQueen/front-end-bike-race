@@ -1,0 +1,37 @@
+.contest-card {
+    border-radius: 0px;
+    background-color: #743778;
+    color: #fff;
+}
+
+.contest-form {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.contest-form h3 {
+    text-align: left;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.contest-form p {
+    text-align: left;
+}
+
+.submission-link a:hover {
+    text-decoration: none;
+}
+
+.submissions-page {
+    height: 50vh;
+}
+
+.bg-contest {
+    background-image: url("../images/contest-pic.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}

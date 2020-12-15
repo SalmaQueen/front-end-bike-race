@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import './Contest.css'
 import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Footer from '../layouts/footer'
+import './Contest.css'
+// import Footer from '../layouts/footer'
 
 const Contest = () => {
     // success and error message
@@ -54,7 +54,7 @@ const Contest = () => {
 
             axios({
                 method: 'POST',
-                url: 'https://boulderbiketour-api.herokuapp.com/api/v1/slogans',
+                url: 'https://mysterious-sands-76152.herokuapp.com/api/v1/slogans',
                 header: {
                     'Content-Type': 'application/json',
                 },
@@ -160,7 +160,7 @@ const Contest = () => {
                 </div>
             </div>
             </div>
-            <Footer />
+           
         </div>
     )
 }

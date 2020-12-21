@@ -2,8 +2,9 @@ import React, {useEffect, useState} from 'react'
 import Images from './Images.js'
 import axios from 'axios'
 import './Photos.css'
-import Pagination from './Pagination'
+import Pagination from './pagination'
 
+require('dotenv').config()
 const Photo = () => {
     const [photos, setPhotos] = useState([]);
     const [totalPhotos, settotalPhotos] = useState(0);
@@ -13,7 +14,7 @@ const Photo = () => {
     const getPhotos = (page) => {
         const url = 'https://api.flickr.com/services/rest/'
         const params = {
-            api_key: process.env.API_KEY,
+            api_key: process.env.REACT_APP_API_KEY,
             method: 'flickr.photos.search',
             tags: 'bikerace,BoulderBikeTour',
             media: 'photo',
@@ -21,11 +22,13 @@ const Photo = () => {
             format: 'json',
             nojsoncallback: 1,
             extras: 'date_upload, icon_server, owner_name, views',
-            page
+            page:1
         }
+        // console.log( process.env.REACT_APP_API_KEY);
         axios.get(
             `${url}`,{params}
         ).then((response) => {
+            console.log(response)
             const { total, photo } = response.data.photos;
             setPhotos(photo);
             settotalPhotos(total)

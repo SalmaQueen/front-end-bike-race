@@ -12,9 +12,14 @@
     background-color: rgba(7, 0, 0, 0.8);
 
 }
+@media only screen and (min-width: 768px) {
+    .timer{
+        float: left;
+    }
+}
 .timer{
     background-color: rgba(2, 12, 1, 0.5);
-    float: left;
+    /* float: left; */
     margin-top:2rem;
     border:2px solid white;
     /* margin: 0 auto; */

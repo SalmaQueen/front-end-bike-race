@@ -57,10 +57,15 @@ const Contest = () => {
                 url: 'https://mysterious-sands-76152.herokuapp.com/api/v1/slogans',
                 header: {
                     'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin' : true,
+                    
                 },
+               
                 data: entry
+
             }).then((response) => {
                 const { data:{ status } } = response
+                console.log(response);
                 switch (status) {
                     case "Success":
                         // clear all entries

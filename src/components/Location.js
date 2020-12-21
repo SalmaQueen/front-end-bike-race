@@ -3,7 +3,9 @@ import "./Location.css";
 import L from "leaflet";
 import Data from "../components/Data";
 import { TileLayer, Marker, Popup, MapContainer } from "react-leaflet";
-import icon from "./assets /icon.png";
+import icon from "./assets /icon2.png";
+
+
 
 // console.log(Data)
 
@@ -48,15 +50,19 @@ import icon from "./assets /icon.png";
 
               <Marker position={pointer} icon={this.myIcon} key={i}>
                 <Popup>
+                <div className="card text-center bg-display">
+                <img className="profile-image"  alt="profile image" src={item.imgUrl}/>
+
                   <h3>
-                    Name:<small>{item.name}</small>
+                    <small>{item.name}</small>
                   </h3>
                   <p>
-                    City:<small>{item.city}</small>
+                    <small>{item.city}</small>
                   </p>
                   <p>
-                    state:<small>{item.state}</small>
+                    <small>{item.state}</small>
                   </p>
+                  </div>
                 </Popup>
               </Marker>
             )

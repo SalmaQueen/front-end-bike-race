@@ -2,3 +2,21 @@
     height:100vh !important;
    
   }
+
+  .profile-image {
+    margin:auto;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(218, 216, 216);
+}
+
+.card{
+  color:white;
+}
+
+h3,p{
+  font-size: 2rem;
+  font-weight: 600px;
+}

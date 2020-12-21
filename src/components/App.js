@@ -10,6 +10,7 @@ import Location from '../components/Location'
 import Rider from '../components/Rider'
 import Home from '../components/Home'
 import Contest from '../components/Contest'
+import Slogans from '../components/Slogan'
 import './App.css'
 
 
@@ -69,6 +70,7 @@ export default function App() {
             <Route path="/contest">
                 <Contest/>
             </Route >
+            <Route path='/submissions' component={Slogans} />
 
          
         </Switch>

@@ -9,7 +9,7 @@ export default class Footer extends Component {
             <div><a href="#">Privacy</a></div>
             <div><a href="#">Terms</a></div>
             </ul>
-            <span>&copy; 2020 Salma-Mohamed</span>
+            <span className="text-dark">&copy; 2020 Salma-Mohamed</span>
         </footer>
             </div>
         )

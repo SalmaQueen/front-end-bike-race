@@ -3,13 +3,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('https://images.unsplash.com/photo-1495563923587-bdc4282494d0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTJ8fGJpa2VyJTIwcmFjZXxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60');
-    color: white;
+    color: rgb(233, 229, 229);
     
     width: 100vw;
     height: 100vh;
 
 
-    background-color: rgba(7, 0, 0, 0.8);
+    background-color: #1e1e1f;
 
 }
 @media only screen and (min-width: 768px) {
@@ -18,9 +18,10 @@
     }
 }
 .timer{
-    background-color: rgba(2, 12, 1, 0.5);
+    background-color: #0FA9F0;
+    opacity: 0.5;
     /* float: left; */
-    margin-top:2rem;
+    /* margin-top:2rem; */
     border:2px solid white;
     /* margin: 0 auto; */
     color: white;

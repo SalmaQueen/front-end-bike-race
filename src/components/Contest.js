@@ -4,7 +4,7 @@ import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Contest.css'
-// import Footer from '../layouts/footer'
+
 
 const Contest = () => {
     // success and error message
@@ -114,7 +114,6 @@ const Contest = () => {
                     <ToastContainer />
                         <form className="contest-form mt-5" onSubmit={handleSubmit}>
                         <h3>Submit Your Slogan</h3>
-                        <p>You think you have the perfect slogan for this year's edition? Lets' hear it.</p>
                         <p className="text-danger">{error}</p>
                         <div className="row">
                             <div className="col-sm-12 col-md-6 input-group mb-3">   
@@ -155,14 +154,8 @@ const Contest = () => {
                         </div>
                         </form>
                     </div>
-                    <div className="col-md-3"></div>
                 </div>
-                <div className="row">
-                    <div className="col-md-10"></div>
-                    <div className="col-sm-12 col-md-2 center-text submission-link mt-2">
-                        <Link to="/submissions" className="">View Submissions</Link>
-                    </div>
-                </div>
+               
             </div>
             </div>
            

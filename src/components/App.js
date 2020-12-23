@@ -21,9 +21,9 @@ export default function App() {
       <div>
    
 
-<nav className="navbar navbar-expand-lg navbar-light bg-display">
+<nav className="navbar navbar-expand-lg navbar-light bg-display sticky-top ">
   
-  <Link className="navbar-brand text-white" to="/">BOULDER BIKE TOUR</Link>
+  <Link className="navbar-brand text-white" to="/" style={{fontWeight:"1000px"}}>BOULDER BIKE TOUR</Link>
 
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
@@ -70,7 +70,7 @@ export default function App() {
             <Route path="/contest">
                 <Contest/>
             </Route >
-            <Route path='/submissions' component={Slogans} />
+            {/* <Route path='/submissions' component={Slogans} /> */}
 
          
         </Switch>

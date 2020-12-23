@@ -2,7 +2,8 @@ import React from 'react'
 import Spinner from './Spinner'
 const shape = {
     borderLeft: '8px solid #743778',
-    backgroundColor: '#EFB1C8'
+    backgroundColor: "#F0560F",
+    opacity:0.8
 }
 const Images = ({ photos }) => {
     return (

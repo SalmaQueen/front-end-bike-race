@@ -11,7 +11,7 @@ export default class Timer extends Component {
                     <section className="timer">
                         <div className="text-center">
                             <i className="fa fa-4x pt-4 pb-2 fa-calendar-check-o " aria-hidden="true"></i>
-                            <h2>Countdown Timer</h2>
+                            <h2 className="text-white">Countdown Timer</h2>
                         </div>
                         
                         <Calc/>

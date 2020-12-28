@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import './Contest.css'
 import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './Contest.css'
 
 
 const Contest = () => {
@@ -54,18 +54,13 @@ const Contest = () => {
 
             axios({
                 method: 'POST',
-                url: 'https://mysterious-sands-76152.herokuapp.com/api/v1/slogans',
+                url: 'https://boulderbiketour-api.herokuapp.com/api/v1/slogans',
                 header: {
                     'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin' : true,
-                    
                 },
-               
                 data: entry
-
             }).then((response) => {
                 const { data:{ status } } = response
-                console.log(response);
                 switch (status) {
                     case "Success":
                         // clear all entries
@@ -100,20 +95,15 @@ const Contest = () => {
 
     }
     return (
-        <div>
-            <div className="card contest-card">
-                <div className="card-body heading-txt">
-                    <h3>It is the contest that delight us, and not the victory ~ Blaise Pascal</h3>
-                </div>
-            </div>
-        <div className="bg-contest">
+     
+      
             <div className="container">
                 <div className="row">
-                    <div className="col-md-3"></div>
                     <div className="col-sm-12 col-md-6">
                     <ToastContainer />
                         <form className="contest-form mt-5" onSubmit={handleSubmit}>
                         <h3>Submit Your Slogan</h3>
+                        {/* <p>You think you have the perfect slogan for this year's edition? Lets' hear it.</p> */}
                         <p className="text-danger">{error}</p>
                         <div className="row">
                             <div className="col-sm-12 col-md-6 input-group mb-3">   
@@ -146,21 +136,28 @@ const Contest = () => {
                             </div>
                         </div>
                         <div className="row">
-                        <div className="col-sm-12">
+                        <div className="col-sm-6">
                             <div className="submit_btn">
                                 <input type="submit" className="form-control btn btn-primary" onClick={handleSubmit} value={btnValue} />
                             </div>
                         </div>
+                        <div className="col-sm-6">
+                            <div className="center-text submission-link">
+                            <Link to="/submissions" >View Submissions</Link>
+                            </div>
+                        </div>
+
                         </div>
                         </form>
                     </div>
                 </div>
-               
+              
             </div>
-            </div>
-           
-        </div>
+            
+         
+      
     )
 }
 
 export default Contest
+

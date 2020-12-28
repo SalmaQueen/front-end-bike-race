@@ -3,6 +3,7 @@ import axios from 'axios'
 import Spinner from './Spinner'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './Slogan.css'
 
 
 const Slogans = () => {
@@ -29,20 +30,15 @@ const Slogans = () => {
     }, []);
 
     return (
-        
-        <div className="">
-            <div className="card contest-card">
-                <div className="card-body heading-txt">
-                    <h3>Here is a list of submissions for the slogan contest</h3>
-                </div>
-            </div>
-            <div className="container submissions-page">
-                <div className="row mt-4">
+    
+          
+            <div className="container">
+                
                 <ToastContainer />    
-                    <div className="col-sm-12">
+                   
                     {slogans.length === 0 ? <Spinner /> : 
-                    <div className="table-responsive">
-                        <table className="table table-color table-sm table-bordered" border="1">
+                    // <div className="table-responsive">
+                        <table className="table t table-sm table-bordered">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -67,15 +63,17 @@ const Slogans = () => {
                             }
                             </tbody>
                         </table>
-                    </div>
-                    }
-                    </div>
                     
+                    }
                 </div>
-            </div>
-          
-        </div>
+       
+      
     )
 }
 
 export default Slogans
+  {/* <div className="card contest-card">
+                <div className="card-body heading-txt">
+                    <h3>Here is a list of submissions for the slogan contest</h3>
+                </div>
+            </div> */}

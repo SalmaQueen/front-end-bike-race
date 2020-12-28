@@ -70,7 +70,7 @@ export default function App() {
             <Route path="/contest">
                 <Contest/>
             </Route >
-            {/* <Route path='/submissions' component={Slogans} /> */}
+            <Route path='/submissions' component={Slogans} />
 
          
         </Switch>

@@ -99,7 +99,7 @@ const Contest = () => {
       
             <div className="container">
                 <div className="row">
-                    <div className="col-sm-12 col-md-6">
+                    <div className="col-sm-12 col-md-12">
                     <ToastContainer />
                         <form className="contest-form mt-5" onSubmit={handleSubmit}>
                         <h3>Submit Your Slogan</h3>

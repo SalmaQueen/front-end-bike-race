@@ -1,3 +1,5 @@
-Openclassrooms project 7 . Bike race app.
+Getting started:
 
-https://naughty-yalow-d79127.netlify.app/
+yarn add global
+
+yarn start

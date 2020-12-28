@@ -4,7 +4,7 @@ export default class Footer extends Component {
     render() {
         return (
             <div>
-        <footer className="text-center text-white bg-display">
+        <footer className=" text-white bg-display">
             <ul>
             <div><a href="#" className="text-white">Privacy</a></div>
             <div><a href="#" className="text-white">Terms</a></div>

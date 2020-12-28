@@ -51,7 +51,7 @@ import icon from "./assets /icon2.png";
               <Marker position={pointer} icon={this.myIcon} key={i}>
                 <Popup>
                 <div className="card text-center bg-display" >
-                <img className="profile-image"  alt="profile image" src={item.imgUrl}/>
+                <img className="profile-image"  alt="profile image" src={item.imgUrl} style={{width:"50%"}}/>
 
                   <h3>
                     <small>{item.name}</small>

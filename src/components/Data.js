@@ -279,20 +279,20 @@ const Data = [
       },
     ],
   },
-  {
-    id: 20,
-    name: "Jason	Nichols",
-    state: "VA",
-    city: "Alexandria",
-    imgUrl:
-      "https://images.pexels.com/photos/2794739/pexels-photo-2794739.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    position: [
-      {
-        lat: 40.01,
-        lng: -105.32,
-      },
-    ],
-  },
+  // {
+  //   id: 20,
+  //   name: "Jason	Nichols",
+  //   state: "VA",
+  //   city: "Alexandria",
+  //   imgUrl:
+  //     "https://images.pexels.com/photos/2794739/pexels-photo-2794739.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  //   position: [
+  //     {
+  //       lat: 40.01,
+  //       lng: -105.32,
+  //     },
+  //   ],
+  // },
 ];
 
 export default Data;
